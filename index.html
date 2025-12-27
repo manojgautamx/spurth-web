@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spurth — Coming Soon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --purple: #6C4DFF;
+      --cyan: #1EE3CF;
+      --orange: #F49128;
+      --bg: #0F1020;
+      --card: rgba(255,255,255,0.04);
+      --text: #FFFFFF;
+      --muted: rgba(255,255,255,0.65);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Manrope', system-ui, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background:
+        radial-gradient(600px 600px at 20% 20%, rgba(108,77,255,0.25), transparent 60%),
+        radial-gradient(500px 500px at 80% 30%, rgba(30,227,207,0.18), transparent 60%),
+        radial-gradient(400px 400px at 50% 80%, rgba(244,145,40,0.15), transparent 60%),
+        var(--bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text);
+      padding: 24px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 520px;
+      padding: 48px 40px;
+      background: var(--card);
+      border-radius: 20px;
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255,255,255,0.06);
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    }
+
+    .logo {
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+    }
+
+    .logo span {
+      background: linear-gradient(135deg, var(--purple), var(--cyan));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-size: 15px;
+      color: var(--muted);
+      margin-bottom: 32px;
+      line-height: 1.6;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 14px;
+      font-size: 13px;
+      font-weight: 500;
+      border-radius: 999px;
+      background: rgba(244,145,40,0.15);
+      color: var(--orange);
+      margin-bottom: 24px;
+    }
+
+    .cta {
+      display: inline-block;
+      padding: 14px 28px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--cyan), #6ff5e6);
+      color: #0b2e2a;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 10px 30px rgba(30,227,207,0.35);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 40px rgba(30,227,207,0.5);
+    }
+
+    footer {
+      margin-top: 32px;
+      font-size: 13px;
+      color: rgba(255,255,255,0.4);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="logo"><span>Spurth</span></div>
+
+    <div class="badge">Coming Soon</div>
+
+    <h1>Something exciting is on the way</h1>
+    <p>
+      A new way to bring people together — to host, join, and play.
+    </p>
+
+    <a href="#" class="cta">Stay tuned</a>
+
+    <footer>
+      © 2025 Spurth
+    </footer>
+  </div>
+
+</body>
+</html>
